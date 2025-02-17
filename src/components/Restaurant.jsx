@@ -1,18 +1,17 @@
 
 
-const Restaurant = ({restaurant}) => {
+const Restaurant = (props) => {
 
     return (
 
         <div className="restaurant">
-            <h2>{restaurant.name}</h2>
+            <h2>{props.restaurant.name}</h2>
             <ul>
-                <li>{restaurant.address}</li>
-                <li>{restaurant.phone}</li>
-                <li>{restaurant.cuisine}</li>
-                <li>{restaurant.rating}</li>
+                <li>{props.restaurant.address}</li>
+                <li>{props.restaurant.phone}</li>
+                <li>{props.restaurant.cuisine}</li>
+                <li>{props.restaurant.rating}</li>
             </ul>
-
 
         </div>
     );
